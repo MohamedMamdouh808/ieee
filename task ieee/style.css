@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/hero bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  header {
+    position: relative;
+    z-index: 1;
+    background-color: transparent; /* make header background transparent */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+.logo-image {
+    width: 100px; /* adjust the width to your desired value */
+    height: 30px; /* adjust the height to your desired value */
+  }
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    padding: 0 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-content {
+    text-align: center;
+    margin-right: 50px;
+    font-size: 11px;
+    color:white;
+}
+
+
+
+.cotainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    width: 40%;
+    text-align: center;
+
+}
+
+.about-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.about-image1 {
+    width: 30%;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.about-image1 img {
+    width: 70%;
+   
+}
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: 0;
+}
+
+.location-content{
+    width: 45%;
+    padding-left: 100px;
+    text-align: center;
+
+}
+
+.about-image2 {
+    width: 45%;
+    padding-left: 100px;
+
+}
+
+.about-image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inline-size: 200px;
+    
+}
+.baking {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.baking-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.baking h2 {
+    align-items: center;
+}
+.baking p {
+    align-items: center;
+    max-width: 600px;
+}
+.baking-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.baking-item {
+    width: 30%;
+    text-align: center;
+}
+
+.baking-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+.contact-content {
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+.map {
+    width: 40%;
+    inline-size: 300px;
+
+}
+
+.map img {
+    width: 100%;
+
+}
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.footer-col {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.footer-col h3 {
+    margin-top: 0;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-col a{
+    color: #337ab7;
+    text-decoration: none;
+}
+ .clearfix{
+    clear: both;
+ }
+
+ .cotainer:after{
+    content: "";
+    display: table;
+    clear: both;
+    
+ }
+ .footer {
+    background-color: #337ab7; /* or any other background color */
+    padding: 10px;
+    text-align: center;
+  }
+
+
+.btn1 {
+    background-color: #25572e;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn2 {
+    color: white;
+    padding: 10px 10px;
+    border: 1px solid white;
+    background:url() ; 
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+    
+
+    .about {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .about-content {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .baking-gallery {
+        flex-direction: column;
+    }
+
+    .baking-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
